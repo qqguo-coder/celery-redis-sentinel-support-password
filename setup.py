@@ -16,7 +16,7 @@ def read(fname):
 
 def remove_section_from_rst(text, section):
     lines = text.splitlines()
-
+    print(lines)
     section_line = lines.index(section)
 
     separator = lines[section_line + 1]

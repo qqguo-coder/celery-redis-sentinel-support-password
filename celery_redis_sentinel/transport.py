@@ -29,6 +29,7 @@ class SentinelChannel(Channel):
         'sentinels',
         'service_name',
         'socket_timeout',
+        'password'
     )
 
     @cached_property
@@ -51,6 +52,7 @@ class SentinelChannel(Channel):
             'sentinels': self.sentinels,
             'service_name': self.service_name,
             'socket_timeout': self.socket_timeout,
+            'password': self.password
         })
         sentinel = get_redis_via_sentinel(
             redis_class=self.Client,

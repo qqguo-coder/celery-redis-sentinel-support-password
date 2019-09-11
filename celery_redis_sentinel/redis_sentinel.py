@@ -170,6 +170,7 @@ def get_redis_via_sentinel(db,
                            redis_class=StrictRedis,
                            sentinel_class=ShortLivedSentinel,
                            connection_pool_class=SentinelConnectionPool,
+                           password=None,
                            **kwargs):
     """
     Helper function for getting ``Redis`` instance via sentinel
@@ -215,4 +216,5 @@ def get_redis_via_sentinel(db,
         db=db,
         redis_class=redis_class,
         connection_pool_class=connection_pool_class,
+        password=password
     )

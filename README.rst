@@ -41,7 +41,7 @@ Installing
 
 Installation is super easy with ``pip``::
 
-    $ pip install celery-redis-sentinel
+    $ pip install celery-redis-sentinel-support-password
 
 Usage
 -----
